@@ -38,7 +38,6 @@ function removeUsedCPUCard(cardValue) {
 }
 
 // Function to handle player's card selection
-// Function to handle player's card selection
 function selectPlayerCard(cardValue) {
     // Check if a card has already been selected for this round
     if (cardSelected) {
@@ -148,7 +147,6 @@ function startNewGame() {
 }
 
 // Function to reset the game
-// Function to reset the game
 function resetGame() {
     // Reset scores, round, and hands
     playerScore = 0;
@@ -176,7 +174,6 @@ function resetGame() {
 }
 
 
-// Function to reset the UI and game state for a new game
 // Function to reset the UI and game state for a new game
 function resetUI() {
     // Reset scores, round, and hands
@@ -229,7 +226,6 @@ function initializeCardButtons() {
 }
 
 // Function to start the next round
-// Function to start the next round
 function startNextRound() {
     // Check if a card has been selected for the current round
     if (!cardSelected) {
@@ -247,11 +243,8 @@ function startNextRound() {
     // Reset cardSelected flag
     cardSelected = false;
 
-    // // Enable the "Start Next Round" button until a card is selected
-    // document.getElementById('start-next-round-button').disabled = false;
 }
 
-// Add event listeners to buttons
 // Add event listener to initialize CPU buttons when the document is loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize card buttons
